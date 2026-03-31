@@ -42,3 +42,7 @@ Nginx should reject the stream with RST_STREAM (PROTOCOL_ERROR) and not forward 
 ## Security Relevance
 
 The `te` header is stripped during H2→H1 translation, which currently prevents the illegal value from reaching backends. However, this relies on translation-layer behavior rather than specification-mandated H2-layer validation. If `proxy_set_header TE $http_te;` is configured (or equivalent), the illegal value reaches the backend, potentially enabling TE-based request smuggling (same class as CVE-2025-4600).
+
+## PoC Repository
+
+https://github.com/APEvul-cyber/HTTP2_nginx_vul/tree/main/HEADERS_te_response

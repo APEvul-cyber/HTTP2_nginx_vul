@@ -119,3 +119,4 @@ Alternatively, at minimum, strip `proxy-connection` during H2→H1 translation (
 - Nginx trac #2078 — Duplicate of #915
 - CVE-2026-26365 — Akamai `Connection: Transfer-Encoding` smuggling
 - CVE-2023-25690 — Apache HTTP Server request smuggling
+- PoC Repository — https://github.com/APEvul-cyber/HTTP2_nginx_vul/tree/main/HEADERS_proxy_connection_response

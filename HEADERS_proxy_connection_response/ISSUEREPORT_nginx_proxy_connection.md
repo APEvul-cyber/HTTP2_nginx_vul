@@ -71,3 +71,7 @@ Nginx should reject the HTTP/2 stream with RST_STREAM (PROTOCOL_ERROR) and not f
 ## Security Relevance
 
 Legacy HTTP/1.1 backends or intermediate proxies may interpret `Proxy-Connection` with hop-by-hop semantics (similar to `Connection`), potentially leading to header stripping or message framing inconsistencies. This is the same class of issue as CVE-2026-26365 (Akamai) and CVE-2023-25690 (Apache).
+
+## PoC Repository
+
+https://github.com/APEvul-cyber/HTTP2_nginx_vul/tree/main/HEADERS_proxy_connection_response

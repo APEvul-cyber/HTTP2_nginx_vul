@@ -82,3 +82,4 @@ Implement or re-apply the 2017 Piotr Sikora patch. In the HTTP/2 header processi
 - Nginx trac #537 — TE hop-by-hop stripping (mitigating factor)
 - CVE-2025-4600 — Google Cloud LB TE.0 smuggling (same attack class)
 - CVE-2026-26365 — Akamai `Connection: Transfer-Encoding` smuggling
+- PoC Repository — https://github.com/APEvul-cyber/HTTP2_nginx_vul/tree/main/HEADERS_te_response
